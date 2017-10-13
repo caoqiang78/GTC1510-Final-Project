@@ -68,18 +68,21 @@ header {
 #logo {
 	/*height:7.5em;*/
 	/*width:12.5em;*/
-	width:200px;
 	height:120px;
+	width:200px;
 }
 
 
 h1 {
 	flex:1;
 	font-size:1.6em;
-	padding-top:1.2em;
 	text-align:center;
+	padding-top:1.2em;
 }
 
+#mobile {
+	display:none;
+}
 
 nav {
 	background-color:#eaeaea;
@@ -176,7 +179,7 @@ span {
 
 /* home page */
 
-.home_pic {
+#home_pic {
 	float:right;
 	margin-left:1.5em;   
 	margin-top:1em;
@@ -249,6 +252,11 @@ a.nodecoration:hover span {
 /* responsive web design */
 
 @media only screen and (max-width:1024px) {
+	#wrapper {
+		margin:0;
+		width:auto;
+	}
+	
 	#three_columns {
 		flex-flow:column;
 	}
@@ -259,18 +267,56 @@ a.nodecoration:hover span {
 	
 	nav ul {
 		flex-direction:row;
-		justify-content:space-around;
+		justify-content:flex-start;
+	}
+	
+	nav ul li {
+		padding:1em;
+		flex:0;
 	}
 	
 	aside>p, aside>h3 {
 		padding-left:2em;
 	}
-	
+}
+
+@media only screen and (max-width:640px) {
 	#logo {
 		display:none;
 	}
-}
-
-@media only screen and (max-width:768px) {
-
+	
+	header {
+		height:60px;
+		padding:0;
+	}
+	
+	#desktop {
+		display:none;
+	}
+	
+	#mobile {
+		display:block;
+	}
+	
+	h1 {
+		padding-top:0.5em;
+	}
+	
+	nav ul {
+		flex-direction:column;
+	}
+	
+	nav ul li {
+		padding:0;
+	}
+	
+	nav a {
+		border-radius:0;
+		box-shadow:none;
+		margin-bottom:0.1em;
+		width:auto;
+	}
+	#home_pic, .noshow_mobile {
+		display:none;
+	}
 }
