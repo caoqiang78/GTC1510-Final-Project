@@ -52,35 +52,50 @@ body {
 
 #three_columns {
 	display:flex;
-	flex-flow:row wrap;}
+	flex-flow:row wrap;
+}
 
 header {
 	background-color:#98baf8;
 	background-image:radial-gradient(#ffffff,#6692e3);
 	background-repeat:no-repeat;
-	height:7.5em;
+	display:flex;
+	flex-flow:row nowrap;
+	/*height:7.5em;*/
+	height:120px;
 }
 
-header a {
-	background-image:url(images/logo.png);
-	display:block;
-	float:left;
-	height:7.5em;
-	width:12.5em;
+#logo {
+	/*height:7.5em;*/
+	/*width:12.5em;*/
+	width:200px;
+	height:120px;
 }
+
+
+h1 {
+	flex:1;
+	font-size:1.6em;
+	padding-top:1.2em;
+	text-align:center;
+}
+
 
 nav {
 	background-color:#eaeaea;
-	flex:2;
-	padding-bottom:0.5em;
-	padding-right:1.5em;
-	padding-top:1.5em;
-	text-align:center;	
+	/*flex:2;*/
+	text-align:center;
+	width:200px;	
 }
 
-li {
-	display:block;
-	margin:0.5em auto 1.5em;
+nav ul {
+	display:flex;
+	flex-direction:column;
+}
+
+nav ul li {
+	padding:1em;
+	flex:1;
 }
 
 nav a {
@@ -116,14 +131,9 @@ main {
 	margin:1.5em;
 }
 
-h1 {
-	font-size:2em;
-	padding-left:9.375em;
-	padding-top:1.25em;
-}
-
 h2 {
-	font:1.5em/1em;
+	font-size:1.2em;
+	line-height:1.25em;
 	margin-bottom:1em;}
 
 h3 {
@@ -234,4 +244,33 @@ a.nodecoration:hover span {
 .right {
 	float:right;
 	margin-left:0.5em;
+}
+
+/* responsive web design */
+
+@media only screen and (max-width:1024px) {
+	#three_columns {
+		flex-flow:column;
+	}
+	
+	nav {
+		width:auto;
+	}
+	
+	nav ul {
+		flex-direction:row;
+		justify-content:space-around;
+	}
+	
+	aside>p, aside>h3 {
+		padding-left:2em;
+	}
+	
+	#logo {
+		display:none;
+	}
+}
+
+@media only screen and (max-width:768px) {
+
 }
