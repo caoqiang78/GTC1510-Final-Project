@@ -24,6 +24,7 @@
 	<nav>
 		<ul>
 			<li><a href="index.html">Home</a></li>
+			<li><a href="about_us.html">About Us</a></li>
 			<li><a href="products.html">Products</a></li>
 			<li><a href="contact_us.html">Contact Us</a></li>
 		</ul>
@@ -34,7 +35,7 @@
 		You may contact us by any of the methods listed below.</p>
 		<br>
 		
-		<div id="contact_us">
+		<div id="address">
 			<div class="left">
 			Mailing Address:
 			<br>
@@ -61,35 +62,30 @@
 		<section>
 			<h2> Contact Us </h2>
 			<p>We would like to hear from you. Please send us a message by filling out the form below and we will get back with you shortly. </p>
-			<form>
-				<label for="first_name"> First Name <sup>*</sup>: </label>
-				<input type="text" name="first_name" id="first_name" required="required">
+			<br>
+			<form method="post" name="contact_us" id="contact_us" action="xxx.php">
+				<fieldset>
+					<label for="name"> <sup>*</sup>Name: </label>
+					<input type="text" name="name" id="name" required="required">
+			
+					<label for="Institution"> <sup>*</sup>Institution: </label>
+					<input type="text" name="Institution" id="Institution" required="required">
+			
+					<label for="email"> <sup>*</sup>E-mail: </label>
+					<input type="text" name="email" id="email" required="required">
+			
+					<label for="tel"> Telephone: </label>
+					<input type="text" name="tel" id="tel">
+			
+					<label for="message"> <sup>*</sup>Message: </label>
+					<textarea type="text" name="message" id="message" required="required" rows="2">
+					</textarea>
+			
+					<input type="submit" value="Submit" name="submit" id="submit">
+				</fieldset>
 			</form>
 		</section>
 		
-		<h3 style="clear:both;padding-left:15px;"> Gallery </h3>
-		<div class="map">
-			<img src="images/gallery/map.png" width="379" height="222" alt="map">
-		</div>
-		<ul id="gallery">
-			<li>
-				<a class="nodecoration" href="images/gallery/gtc1.jpg">
-					<img src="images/gallery/gtc1thumbnail.jpg" width="100" height="57" alt="Buildeing #1">
-					<span> <img src="images/gallery/gtc1-300x300.jpg" width="400" height="231" alt="Buildeing #1"> <br> Building #1 </span> </a>
-			</li>
-			
-			<li>
-				<a class="nodecoration" href="images/gallery/gtc2.jpg">
-					<img src="images/gallery/gtc2thumbnail.jpg" width="100" height="57" alt="Buildeing #2">
-					<span> <img src="images/gallery/gtc2-300x300.jpg" width="400" height="231" alt="Buildeing #2"> <br> Building #2 </span> </a>
-			</li>
-			
-			<li>
-				<a class="nodecoration" href="images/gallery/gtc3.jpg">
-					<img src="images/gallery/gtc3thumbnail.jpg" width="100" height="57" alt="Buildeing #3">
-					<span> <img src="images/gallery/gtc3-300x300.jpg" width="400" height="231" alt="Buildeing #3"> <br> Building #3 </span> </a>
-			</li>
-		</ul>
 	</main>
 	
 	<aside>

@@ -227,17 +227,47 @@ td img {
 /* tr:nth-of-type(even) {background-color:hsl(0,0%,90%);} */
 
 /* contact us page */
-#contact_us {
+#address {
 	display:flex;
 	flex-flow:row wrap;
 }
 
-#gallery {
-	position:relative;
-}
-
 .left, .right {
 	padding-left:1em;
+}
+
+fieldset {
+	border:2px solid hsl(0, 100%, 18%);
+	padding:1em;
+}
+
+label {
+	float:left;
+	margin-right:0.5em;
+	text-align:right;
+	width:8em;
+}
+
+input, textarea {
+	border:1px solid hsl(0, 100%, 18%);
+	display:block;
+	font-size:1.5em;
+	margin-bottom:0.5em;
+	width:60%;
+}
+
+#submit {
+	background-color:#fff;
+	font-size:1.2em;
+	margin:auto;
+	width:6em;
+}
+
+/* about us page */
+#gallery {
+	position:relative;
+	margin-top:1em;
+	margin-bottom:3.5em;
 }
 
 li span {
@@ -248,16 +278,16 @@ a.nodecoration:hover span {
 	display:block;
 	font-style:normal;
 	position:absolute;
-	left:7.5em;
+	left:120px;
 	top:0;
 	text-align:center;
 }
 						   
 .map {
-	float:right;
-	padding-right:0.5em;  
-	padding-top:0.5em;
+	position:absolute;
+	left:120px;
 }
+
 
 /* responsive web design */
 
@@ -288,6 +318,10 @@ a.nodecoration:hover span {
 	
 	main {
 		margin:1em;
+	}
+	
+	input, textarea {
+		width:70%;
 	}
 	
 	aside {
@@ -336,5 +370,9 @@ a.nodecoration:hover span {
 	}
 	#home_pic, .noshow_mobile {
 		display:none;
+	}
+	
+	input, textarea {
+		width:60%;
 	}
 }
