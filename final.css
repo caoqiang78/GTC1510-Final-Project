@@ -40,7 +40,8 @@ body {
 	background-color:#deeaff;
 	color:#333333;
 	font-family:Verdana, Arial, sans-serif;
-	font:1em/1.5em;
+	font-size:1em;
+	line-height:1.5em;
 }
 
 #wrapper {
@@ -99,6 +100,7 @@ nav ul {
 nav ul li {
 	padding:1em;
 	flex:1;
+	font-size:1.2em;
 }
 
 nav a {
@@ -189,7 +191,14 @@ img {
 	max-width:100%;
 }
 
-/* products page*/
+/* products page */
+
+#products_img img {
+	display:block;
+	margin:auto;
+}
+
+/* products_item page*/
 table {
 	border:2px solid hsl(0,100%,18%);
 	border-collapse:collapse;
@@ -212,13 +221,23 @@ th, td {
 
 td img {
 	vertical-align:middle;
+	max-width:100%
 }
 
 /* tr:nth-of-type(even) {background-color:hsl(0,0%,90%);} */
 
 /* contact us page */
+#contact_us {
+	display:flex;
+	flex-flow:row wrap;
+}
+
 #gallery {
 	position:relative;
+}
+
+.left, .right {
+	padding-left:1em;
 }
 
 li span {
@@ -239,21 +258,13 @@ a.nodecoration:hover span {
 	padding-right:0.5em;  
 	padding-top:0.5em;
 }
-	  
-.left {
-	float:left;
-}
-
-.right {
-	float:right;
-	margin-left:0.5em;
-}
 
 /* responsive web design */
 
 @media only screen and (max-width:1024px) {
 	#wrapper {
 		margin:0;
+		min-width:330px;
 		width:auto;
 	}
 	
@@ -275,6 +286,14 @@ a.nodecoration:hover span {
 		flex:0;
 	}
 	
+	main {
+		margin:1em;
+	}
+	
+	aside {
+		padding-top:1em;
+	}
+	
 	aside>p, aside>h3 {
 		padding-left:2em;
 	}
@@ -287,7 +306,6 @@ a.nodecoration:hover span {
 	
 	header {
 		height:60px;
-		padding:0;
 	}
 	
 	#desktop {
@@ -308,12 +326,12 @@ a.nodecoration:hover span {
 	
 	nav ul li {
 		padding:0;
+		margin-top:0.1em;
 	}
 	
 	nav a {
 		border-radius:0;
 		box-shadow:none;
-		margin-bottom:0.1em;
 		width:auto;
 	}
 	#home_pic, .noshow_mobile {
