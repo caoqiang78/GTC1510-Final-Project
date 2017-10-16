@@ -241,6 +241,12 @@ fieldset {
 	padding:1em;
 }
 
+legend {
+	font-weight:bold;
+	font-size:1.2em;
+	text-align:center;
+}
+
 label {
 	float:left;
 	margin-right:0.5em;
@@ -373,6 +379,6 @@ a.nodecoration:hover span {
 	}
 	
 	input, textarea {
-		width:60%;
+		width:50%;
 	}
 }
