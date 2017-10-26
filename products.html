@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Md BioChem</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-sacle=1.0">
+	<link rel="stylesheet" href="final.css">
+	<link rel="shortcut icon" href="images/favicon.ico" style="image/x-icon">
+	<link rel="icon" href="images/favicon.ico" style="image/x-icon">
+</head>
+
+<body>
+<div id="wrapper"> <!--center page layout-->
+	<header>
+	<div id="logo">
+	<a href="index.html">
+		<img src="images/logo.jpg" alt="MD logo">
+	</a>
+	</div>
+	<h1 id="desktop">MD BioChem Advances Your Future!</h1>
+	<h1 id="mobile">MD BioChem</h1>
+	</header>
+	
+	<!-- using flexbox to layout three column that will automaticly be applied for responsive web design -->
+	<div id="three_columns">
+	<nav>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="about_us.html">About Us</a></li>
+			<li><a href="products.html">Products</a></li>
+			<li><a href="contact_us.html">Contact Us</a></li>
+		</ul>
+	</nav>
+	<main>
+		
+		<!-- image map was used for products -->
+		<div id="products_img">
+		<h2>Welcome to MD BioChem!</h2>
+		
+		<p>MD BioChem provides high quality of PEG Products, Porphyrin products and Magnetic Beads!</p>
+		<br>
+		<img src="images/products.jpg" width="300" height="600" usemap="#products" alt="Producnts Scheme">
+		
+		<map name="products">
+			<area shape="rect" href="index.html" coords="88,237,215,364" alt="Home Page">
+			<area shape="rect" href="products_items.html#peg" coords="88,8,215,135" alt="Peg Products">
+			<area shape="rect" href="products_items.html#porphyrin" coords="10,448,137,574" alt="Porphyrin Products">
+			<area shape="rect" href="products_items.html#beads" coords="159,447,287,576" alt="Magnetic Beads">
+		</map>
+		</div>
+	</main>
+	
+	<aside>
+		<h3> Discount </h3>
+		<p> <span>September:</span> <br> 10% off with code "<span>Sep10%OFF</span>"</p>
+		<br>
+		<hr>
+		<hr>
+		<br>
+		<h3> Free Shipping  </h3> 
+		<p> Total amount more than $1000 </p>
+		<br>
+		<hr>
+		<hr>
+		<br>
+		<h3>Information</h3>
+		<p> <a href="http://www.google.com" target="_blank"> <span>Google</span> </a></p>
+		<br>
+	</aside>
+	</div>
+	<footer>
+		Copyright &copy; 2017 MD BioChem
+		<br>
+		<a href="mailto:john@mdbiochem.com">john@mdbiochem.com</a>
+	</footer>
+</div>
+</body>
+</html>

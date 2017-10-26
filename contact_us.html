@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Md BioChem Contact Us</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-sacle=1.0">
+	<link rel="stylesheet" href="final.css">
+	<link rel="shortcut icon" href="images/favicon.ico" style="image/x-icon">
+	<link rel="icon" href="images/favicon.ico" style="image/x-icon">
+</head>
+
+<body>
+<div id="wrapper"> <!--center page layout-->
+	<header>
+	<div id="logo">
+	<a href="index.html">
+		<img src="images/logo.jpg" alt="MD logo">
+	</a>
+	</div>
+	<h1 id="desktop">MD BioChem Advances Your Future!</h1>
+	<h1 id="mobile">MD BioChem</h1>
+	</header>
+	
+	<!-- using flexbox to layout three column that will automaticly be applied for responsive web design -->
+	<div id="three_columns">
+	<nav>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="about_us.html">About Us</a></li>
+			<li><a href="products.html">Products</a></li>
+			<li><a href="contact_us.html">Contact Us</a></li>
+		</ul>
+	</nav>
+	<main>
+		<h2>Welcome to MD BioChem!</h2>
+		<p>Thank you for your interest in products and/or services. 
+		You may contact us by any of the methods listed below.</p>
+		<br>
+		
+		<div id="address">
+			<div class="left">
+			Mailing Address:
+			<br>
+			MD BioChem
+			<br>
+			Lawrenceville, GA 30000
+			<br>
+			USA
+			<br>
+			<br>
+			</div>
+	
+			<div class="right">
+			E-mail: <a href="mailto:info@mdbiochem.com"> info@mdbiochem.com </a>
+			<br>
+			Phone: +1-404-xxx-xxxx
+			<br>
+			Fax: +1-404-xxx-xxxx
+			<br>
+			<br>
+			</div>
+		</div>
+		
+		<!-- form is used for data collection -->
+		<section>
+			<h2> Contact Us </h2>
+			<p>We would like to hear from you. Please send us a message by filling out the form below and we will get back with you shortly. </p>
+			<br>
+			<form method="post" name="contact_us" id="contact_us" action="xxx.php">
+				<fieldset>
+					<legend> &nbsp;Contact Us Form&nbsp; </legend>
+					<label for="name"> <sup>*</sup>Name: </label>
+					<input type="text" name="name" id="name" required="required">
+			
+					<label for="Institution"> <sup>*</sup>Institution: </label>
+					<input type="text" name="Institution" id="Institution" required="required">
+			
+					<label for="email"> <sup>*</sup>E-mail: </label>
+					<input type="text" name="email" id="email" required="required">
+			
+					<label for="tel"> Telephone: </label>
+					<input type="text" name="tel" id="tel">
+			
+					<label for="message"> <sup>*</sup>Message: </label>
+					<textarea type="text" name="message" id="message" required="required" rows="2">
+					</textarea>
+			
+					<input type="submit" value="Submit" name="submit" id="submit">
+				</fieldset>
+			</form>
+		</section>
+		
+	</main>
+	
+	<aside>
+		<h3> Discount </h3>
+		<p> <span>September:</span> <br> 10% off with code "<span>Sep10%OFF</span>"</p>
+		<br>
+		<hr>
+		<hr>
+		<br>
+		<h3> Free Shipping  </h3> 
+		<p> Total amount more than $1000 </p>
+		<br>
+		<hr>
+		<hr>
+		<br>
+		<h3>Information</h3>
+		<p> <a href="http://www.google.com" target="_blank"> <span>Google</span> </a></p>
+		<br>
+	</aside>
+	</div>
+	<footer>
+		Copyright &copy; 2017 MD BioChem
+		<br>
+		<a href="mailto:john@mdbiochem.com">john@mdbiochem.com</a>
+	</footer>
+</div>
+</body>
+</html>

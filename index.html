@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Fred Munster's Model Train Shop</title>
+	<title>Md BioChem</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-sacle=1.0">
 	<link rel="stylesheet" href="final.css">
@@ -12,30 +12,38 @@
 <body>
 <div id="wrapper"> <!--center page layout-->
 	<header>
-	<a href="index.html"> </a>
-	<h1>Fred Munster's Model Train Shop</h1>
+	<div id="logo">
+	<a href="index.html">
+		<img src="images/logo.jpg" alt="MD logo">
+	</a>
+	</div>
+	<h1 id="desktop">MD BioChem Advances Your Future!</h1>
+	<h1 id="mobile">MD BioChem</h1>
 	</header>
+	
+	<!-- using flexbox to layout three column that will automaticly be applied for responsive web design -->
 	<div id="three_columns">
 	<nav>
 		<ul>
 			<li><a href="index.html">Home</a></li>
+			<li><a href="about_us.html">About Us</a></li>
 			<li><a href="products.html">Products</a></li>
-			<li><a href="contact_us.html">Contact Us</a><li>
+			<li><a href="contact_us.html">Contact Us</a></li>
 		</ul>
 	</nav>
 	<main>
-		<h2>Welcome to Fred Munster's Model Train Shop!</h2>
+		<h2>Welcome to MD BioChem!</h2>
 		
-		<div class="home_pic">
+		<div id="home_pic">
 			<img src="images/home-pic.png" width="200" height="150" alt="lab picture">
 		</div>
 		
-		<p>Fred Munster's Model Train Shop provides high quality of PEG Products, Porphyrin products and Magnetic Beads!</p>
+		<p>MD BioChem provides high quality of PEG Products, Porphyrin products and Magnetic Beads!</p>
 		<br>
 
 		<dl>
-			<dt> <a href="products.html#peg" target="_blank">PEG Products</a> </dt>
-				<dd>
+			<dt> <a href="products_items.html#peg" target="_blank">PEG Products</a> </dt>
+				<dd class="noshow_mobile">
 					Polyethylene glycol (PEG) is a polyether compound with many 
 				    applications from industrial manufacturing to medicine. MD BioChem 
 				    provides all kinds of PEG products, including 
@@ -43,16 +51,16 @@
 				    2-Arm PEG, 4-Arm PEG and 8-Arm PEG.
 				</dd>
 			
-			<dt><a href="products.html#porphyrin" target="_blank"> Porphyrin Products </a></dt>
-				<dd>
+			<dt><a href="products_items.html#porphyrin" target="_blank"> Porphyrin Products </a></dt>
+				<dd class="noshow_mobile">
 					Porphyrin products and porphyrin derivatives, such as Chlorin, 
 					Protoporphyrin and their transition metal complexes, 
 					have been widely used and studied as biomedicines, catalysts, 
 					photonics, molecular electronics and sensor’s development.
 				</dd>
 				
-			<dt><a href="products.html#beads" target="_blank"> Magnetic Beads </a></dt>
-				<dd>
+			<dt><a href="products_items.html#beads" target="_blank"> Magnetic Beads </a></dt>
+				<dd class="noshow_mobile">
 					A series of superior paramagnetic beads are widely used 
 					in the purification and isolation of DNA/RNA and proteins. 
 					Our magnetic beads have a solid core consisting of 
@@ -67,7 +75,7 @@
 	</main>
 	
 	<aside>
-		<h3> Monthly Discount </h3>
+		<h3> Discount </h3>
 		<p> <span>September:</span> <br> 10% off with code "<span>Sep10%OFF</span>"</p>
 		<br>
 		<hr>
@@ -79,14 +87,15 @@
 		<hr>
 		<hr>
 		<br>
-		<h3>More information</h3>
+		<h3>Information</h3>
 		<p> <a href="http://www.google.com" target="_blank"> <span>Google</span> </a></p>
+		<br>
 	</aside>
 	</div>
 	<footer>
-		Copyright &copy; 2017 Fred Munster's Model Train Shop
+		Copyright &copy; 2017 MD BioChem
 		<br>
-		<a href="mailto:john@trainshop.com">john@trainshop.com</a>
+		<a href="mailto:john@mdbiochem.com">john@mdbiochem.com</a>
 	</footer>
 </div>
 </body>
