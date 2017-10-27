@@ -101,6 +101,7 @@ nav ul li {
 	padding:1em;
 	flex:1;
 	font-size:1.2em;
+	position:relative;
 }
 
 nav a {
@@ -113,6 +114,23 @@ nav a {
 	padding:0.5em;
 	text-decoration:none;
 	width:7.5em;
+}
+
+#submenu {
+	display:none;
+}
+
+ul#submenu li {
+	font-size:0.8em;
+	box-shadow:none;
+	padding:0;
+}
+
+ul li:hover ul {
+	display:block;
+	position:absolute;
+	left:180px;
+	top:0;
 }
 
 nav a:link {
