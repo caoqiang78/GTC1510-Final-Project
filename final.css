@@ -121,16 +121,19 @@ nav a {
 }
 
 ul#submenu li {
-	font-size:0.8em;
-	box-shadow:none;
+	border-bottom:0.125em solid #fff;
 	padding:0;
+}
+
+ul#submenu li a {
+	box-shadow:none;
 }
 
 ul li:hover ul {
 	display:block;
 	position:absolute;
 	left:180px;
-	top:0;
+	top:20px;
 }
 
 nav a:link {
