@@ -42,6 +42,7 @@ body {
 	font-family:Verdana, Arial, sans-serif;
 	font-size:1em;
 	line-height:1.5em;
+	min-width:360px;
 }
 
 #wrapper {
@@ -101,6 +102,7 @@ nav ul li {
 	padding:1em;
 	flex:1;
 	font-size:1.2em;
+	position:relative;
 }
 
 nav a {
@@ -113,6 +115,27 @@ nav a {
 	padding:0.5em;
 	text-decoration:none;
 	width:7.5em;
+}
+
+#submenu {
+	display:none;
+}
+
+ul#submenu li {
+	border-bottom:0.125em solid #fff;
+	padding:0;
+}
+
+ul#submenu li a {
+	box-shadow:none;
+	font-size:0.8em;
+}
+
+ul li:hover ul#submenu {
+	display:block;
+	position:absolute;
+	left:180px;
+	top:20px;
 }
 
 nav a:link {
@@ -322,6 +345,13 @@ a.nodecoration:hover span {
 		flex:0;
 	}
 	
+	ul li:hover ul#submenu {
+		display:block;
+		position:absolute;
+		left:24px;
+		top:70px;
+	}
+	
 	main {
 		margin:1em;
 	}
@@ -374,6 +404,11 @@ a.nodecoration:hover span {
 		box-shadow:none;
 		width:auto;
 	}
+	
+	ul li:hover ul#submenu {
+		display:none;
+	}
+	
 	#home_pic, .noshow_mobile {
 		display:none;
 	}
