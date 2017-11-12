@@ -4,14 +4,20 @@
 	<title>Md BioChem Products</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-sacle=1.0">
+	<meta name="robots" content="noindex,nofollow">
+	<meta name="description" content="Md BioChem products are more cheap and more high high quality. Please choose our PEG, Porphyrin and Magnetic Beads!">
 	<link rel="stylesheet" href="final.css">
 	<link rel="shortcut icon" href="images/favicon.ico" style="image/x-icon">
 	<link rel="icon" href="images/favicon.ico" style="image/x-icon">
+	<!--[if lt IE 9 ]>
+	<script src="http://html5shim.googlecod.com/svn/trunk/html5.js">
+	</script>
+	<! [endif]-->
 </head>
 
 <body>
 <div id="wrapper"> <!--center page layout-->
-	<header>
+	<header role="banner">
 	<div id="logo">
 	<a href="index.html">
 		<img src="images/logo.jpg" alt="MD logo">
@@ -23,15 +29,24 @@
 	
 	<!-- using flexbox to layout three column that will automaticly be applied for responsive web design -->
 	<div id="three_columns">
-	<nav>
+	<nav role="navigation">
 		<ul>
 			<li><a href="index.html">Home</a></li>
 			<li><a href="about_us.html">About Us</a></li>
-			<li><a href="products.html">Products</a></li>
+			<li>
+				<a href="products.html">Products</a>
+				<ul id="submenu">
+					<li> <a href="products_items.html#peg">PEG</a> </li>
+					<li> <a href="products_items.html#porphyrin"> Porphyrin </a> </li>
+					<li> <a href="products_items.html#beads"> Beads </a> </li>
+				</ul>
+			</li>
 			<li><a href="contact_us.html">Contact Us</a></li>
+			<li><a href="faq.html">FAQ</a></li>
+			<li><a href="blog.html">Blog</a></li>
 		</ul>
 	</nav>
-	<main>
+	<main role="main">
 		<h2>Welcome to MD BioChem!</h2>
 		<p>MD BioChem provides high quality of 
 		<a href="#peg">PEG Products</a>, <a href="#porphyrin">Porphyrin products</a> 
@@ -55,35 +70,70 @@
 					<td headers="structure">
 						<img src="images/products/homoPEG.png" alt="Homo PEG">
 					</td>
-					<td headers="price"> $1000 </td>
+					<td headers="price"> 
+						$1000 
+						<form role="form" id="cart" method="post" action="http://www.webdevfoundations.net/scripts/cart.asp">
+							<input type="hidden" name="desc1" id="desc1" value="PEG#1">
+							<input type="hidden" name="cost1" id="cost1" value="1000">
+							<input type="submit" value="Add">
+						</form>
+					</td>
 				</tr>
 				
 				<tr>
 					<td headers="structure">
 						<img src="images/products/heteroPEG.png" alt="Hetero PEG">
 					</td>
-					<td headers="price"> $1100 </td>
+					<td headers="price"> 
+						$1100
+						<form role="form" id="cart" method="post" action="http://www.webdevfoundations.net/scripts/cart.asp">
+							<input type="hidden" name="desc2" id="desc2" value="PEG#2">
+							<input type="hidden" name="cost2" id="cost2" value="1100">
+							<input type="submit" value="Add">
+						</form>
+					</td>
 				</tr>
 				
 				<tr>
 					<td headers="structure">
 						<img src="images/products/2-Arm_PEG.png" alt="2-Arm PEG">
 					</td>
-					<td headers="price"> $1200 </td>
+					<td headers="price"> 
+					$1200
+					<form role="form" id="cart" method="post" action="http://www.webdevfoundations.net/scripts/cart.asp">
+						<input type="hidden" name="desc1" id="desc1" value="PEG#3">
+						<input type="hidden" name="cost1" id="cost1" value="1200">
+						<input type="submit" value="Add">
+					</form>
+					</td>
 				</tr>
 				
 				<tr>
 					<td headers="structure">
 						<img src="images/products/4-Arm_PEG.png" alt="4-Arm PEG">
 					</td>
-					<td headers="price"> $1300 </td>
+					<td headers="price"> 
+					$1300
+					<form role="form" id="cart" method="post" action="http://www.webdevfoundations.net/scripts/cart.asp">
+						<input type="hidden" name="desc2" id="desc2" value="PEG#4">
+						<input type="hidden" name="cost2" id="cost2" value="1300">
+						<input type="submit" value="Add">
+					</form>
+					</td>
 				</tr>
 				
 				<tr>
 					<td headers="structure">
 						<img src="images/products/8-Arm_PEG.png" alt="8-Arm PEG">
 					</td>
-					<td headers="price"> $1400 </td>
+					<td headers="price"> 
+					$1400 
+					<form role="form" id="cart" method="post" action="http://www.webdevfoundations.net/scripts/cart.asp">
+						<input type="hidden" name="desc1" id="desc1" value="PEG#5">
+						<input type="hidden" name="cost1" id="cost1" value="1400">
+						<input type="submit" value="Add">
+					</form>
+					</td>
 				</tr>
 				
 				<tr>
@@ -91,35 +141,70 @@
 					<td headers="structure">
 						<img src="images/products/p1.png" alt="Tetraphenylporphyrin">
 					</td>
-					<td headers="price"> $2000 </td>
+					<td headers="price"> 
+					$2000 
+					<form role="form" id="cart" method="post" action="http://www.webdevfoundations.net/scripts/cart.asp">
+						<input type="hidden" name="desc2" id="desc2" value="Porphyrin#1">
+						<input type="hidden" name="cost2" id="cost2" value="2000">
+						<input type="submit" value="Add">
+					</form>
+					</td>
 				</tr>
 				
 				<tr>
 					<td headers="structure">
 						<img src="images/products/p2.png" alt="Pt(II) Octaethylporphine">
 					</td>
-					<td headers="price"> $2100 </td>
+					<td headers="price"> 
+					$2100 
+					<form role="form" id="cart" method="post" action="http://www.webdevfoundations.net/scripts/cart.asp">
+						<input type="hidden" name="desc1" id="desc1" value="Porphyrin#2">
+						<input type="hidden" name="cost1" id="cost1" value="2100">
+						<input type="submit" value="Add">
+					</form>
+					</td>
 				</tr>
 				
 				<tr>
 					<td headers="structure">
 						<img src="images/products/p3.png" alt="Chlorin E6 Trisodium Salt">
 					</td>
-					<td headers="price"> $2200 </td>
+					<td headers="price"> 
+					$2200 
+					<form role="form" id="cart" method="post" action="http://www.webdevfoundations.net/scripts/cart.asp">
+						<input type="hidden" name="desc2" id="desc2" value="Porphyrin#3">
+						<input type="hidden" name="cost2" id="cost2" value="2200">
+						<input type="submit" value="Add">
+					</form>
+					</td>
 				</tr>
 				
 				<tr>
 					<td headers="structure">
 						<img src="images/products/p4.png" alt="Mn(III) meso-Tetraphenylporphine">
 					</td>
-					<td headers="price"> $2300 </td>
+					<td headers="price"> 
+					$2300 
+					<form role="form" id="cart" method="post" action="http://www.webdevfoundations.net/scripts/cart.asp">
+						<input type="hidden" name="desc1" id="desc1" value="Porphyrin#4">
+						<input type="hidden" name="cost1" id="cost1" value="2300">
+						<input type="submit" value="Add">
+					</form>
+					</td>
 				</tr>
 				
 				<tr>
 					<td headers="structure">
 						<img src="images/products/p4.png" alt="Fe(III) meso-Tetraphenylporphine">
 					</td>
-					<td headers="price"> $2400 </td>
+					<td headers="price"> 
+					$2400 
+					<form role="form" id="cart" method="post" action="http://www.webdevfoundations.net/scripts/cart.asp">
+						<input type="hidden" name="desc2" id="desc2" value="Porphyrin#5">
+						<input type="hidden" name="cost2" id="cost2" value="2400">
+						<input type="submit" value="Add">
+					</form>
+					</td>
 				</tr>
 				
 				<tr>
@@ -127,14 +212,21 @@
 					<td headers="structure">
 						<img src="images/products/magnetic_beads.png" alt="Magnetic Beads" style="padding:10px 0;">
 					</td>
-					<td headers="price"> $3000 </td>
+					<td headers="price"> 
+					$3000 
+					<form role="form" id="cart" method="post" action="http://www.webdevfoundations.net/scripts/cart.asp">
+						<input type="hidden" name="desc1" id="desc1" value="Magnetic Beads">
+						<input type="hidden" name="cost1" id="cost1" value="3000">
+						<input type="submit" value="Add">
+					</form>
+					</td>
 				</tr>
 			</tbody>
 		</table>
 		<p style="font-style:italic; font-weight:bold;text-align:right;"> <a href="#top">To Top</a> </p>
 	</main>
 	
-	<aside>
+	<aside role="complementary">
 		<h3> Discount </h3>
 		<p> <span>September:</span> <br> 10% off with code "<span>Sep10%OFF</span>"</p>
 		<br>
@@ -152,7 +244,9 @@
 		<br>
 	</aside>
 	</div>
-	<footer>
+	<footer role="contentinfo">
+		<a href="privacy_policy.html"> Privacy Policy </a> &#124; <a href="sitemap.html"> Sitemap </a>
+		<br>
 		Copyright &copy; 2017 MD BioChem
 		<br>
 		<a href="mailto:john@mdbiochem.com">john@mdbiochem.com</a>

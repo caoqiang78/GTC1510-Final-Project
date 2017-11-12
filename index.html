@@ -4,14 +4,20 @@
 	<title>Md BioChem</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-sacle=1.0">
+	<meta name="robots" content="noindex,nofollow">
+	<meta name="description" content="Md BioChem provides high quality of PEG Products, Porphyrin products and Magnetic Beads!">
 	<link rel="stylesheet" href="final.css">
 	<link rel="shortcut icon" href="images/favicon.ico" style="image/x-icon">
 	<link rel="icon" href="images/favicon.ico" style="image/x-icon">
+	<!--[if lt IE 9 ]>
+	<script src="http://html5shim.googlecod.com/svn/trunk/html5.js">
+	</script>
+	<! [endif]-->
 </head>
 
 <body>
 <div id="wrapper"> <!--center page layout-->
-	<header>
+	<header role="banner">
 	<div id="logo">
 	<a href="index.html">
 		<img src="images/logo.jpg" alt="MD logo">
@@ -23,7 +29,7 @@
 	
 	<!-- using flexbox to layout three column that will automaticly be applied for responsive web design -->
 	<div id="three_columns">
-	<nav>
+	<nav role="navigation">
 		<ul>
 			<li><a href="index.html">Home</a></li>
 			<li><a href="about_us.html">About Us</a></li>
@@ -36,9 +42,11 @@
 				</ul>
 			</li>
 			<li><a href="contact_us.html">Contact Us</a></li>
+			<li><a href="faq.html">FAQ</a></li>
+			<li><a href="blog.html">Blog</a></li>
 		</ul>
 	</nav>
-	<main>
+	<main role="main">
 		<h2>Welcome to MD BioChem!</h2>
 		
 		<div id="home_pic">
@@ -81,7 +89,7 @@
 		</dl>
 	</main>
 	
-	<aside>
+	<aside role="complementary">
 		<h3> Discount </h3>
 		<p> <span>September:</span> <br> 10% off with code "<span>Sep10%OFF</span>"</p>
 		<br>
@@ -99,7 +107,9 @@
 		<br>
 	</aside>
 	</div>
-	<footer>
+	<footer role="contentinfo">
+		<a href="privacy_policy.html"> Privacy Policy </a> &#124; <a href="sitemap.html"> Sitemap </a>
+		<br>
 		Copyright &copy; 2017 MD BioChem
 		<br>
 		<a href="mailto:john@mdbiochem.com">john@mdbiochem.com</a>

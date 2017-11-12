@@ -196,6 +196,10 @@ footer {
 	text-align:center;
 }
 
+footer a {
+	text-decoration:none;
+}
+
 span {
 	font-size:1em;
 	font-weight:bold;
@@ -245,6 +249,15 @@ th, td {
 td img {
 	vertical-align:middle;
 	max-width:100%
+}
+
+#cart input{
+	background-color:#eaeaea;
+	border:1px solid #333333;
+	border-radius: 20%;
+	display:inline;
+	font-size:1em;
+	width:3em;
 }
 
 /* tr:nth-of-type(even) {background-color:hsl(0,0%,90%);} */
@@ -317,13 +330,27 @@ a.nodecoration:hover span {
 	left:120px;
 }
 
+/* blog page, sitemap page and privacy policy papge */
+
+h2.blog, h2.privacy_policy, h2.sitemap {
+	font-size:1.5em;
+}
+
+h3.blog{
+	color:#333;
+}
+
+ul.privacy_policy, ul.sitemap{
+	list-style-type:disc;
+	padding-left:2.5em;
+}
 
 /* responsive web design */
 
 @media only screen and (max-width:1024px) {
 	#wrapper {
 		margin:0;
-		min-width:330px;
+		min-width:730px;
 		width:auto;
 	}
 	
@@ -336,7 +363,7 @@ a.nodecoration:hover span {
 	}
 	
 	nav ul {
-		flex-direction:row;
+		flex-flow:row wrap;
 		justify-content:flex-start;
 	}
 	
@@ -370,6 +397,10 @@ a.nodecoration:hover span {
 }
 
 @media only screen and (max-width:640px) {
+	#wrapper {
+		min-width:330px;
+	}
+	
 	#logo {
 		display:none;
 	}
