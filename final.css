@@ -160,7 +160,7 @@ main {
 }
 
 h2 {
-	font-size:1.2em;
+	font-size:1.5em;
 	line-height:1.25em;
 	margin-bottom:1em;}
 
@@ -268,6 +268,10 @@ td img {
 	flex-flow:row wrap;
 }
 
+form#contact_us{
+	min-width:350px;
+}
+
 .left, .right {
 	padding-left:1em;
 }
@@ -298,11 +302,35 @@ input, textarea {
 	width:60%;
 }
 
-#submit {
-	background-color:#fff;
+input#goverment, input#university, input#company{
+	display:inline;
+	width:1em;	
+}
+
+input#university, input#company{
+	margin-left:5.7em;	
+}
+
+select {
+	display:block;
+	font-size:1.0em;
+	margin-bottom:0.8em;
+	width:160px;
+}
+
+#submit, #reset {
+	background-color:#ccc;
+	float:left;
 	font-size:1.2em;
-	margin:auto;
 	width:6em;
+}
+
+#submit{
+	margin-left:20%;
+}
+
+#reset {
+	margin-left:1em;
 }
 
 /* about us page */
@@ -331,10 +359,6 @@ a.nodecoration:hover span {
 }
 
 /* blog page, sitemap page and privacy policy papge */
-
-h2.blog, h2.privacy_policy, h2.sitemap {
-	font-size:1.5em;
-}
 
 h3.blog{
 	color:#333;
@@ -398,7 +422,7 @@ ul.privacy_policy, ul.sitemap{
 
 @media only screen and (max-width:640px) {
 	#wrapper {
-		min-width:330px;
+		min-width:350px;
 	}
 	
 	#logo {
