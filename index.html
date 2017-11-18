@@ -9,6 +9,15 @@
 	<link rel="stylesheet" href="final.css">
 	<link rel="shortcut icon" href="images/favicon.ico" style="image/x-icon">
 	<link rel="icon" href="images/favicon.ico" style="image/x-icon">
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
+	</script>
+	<script>
+		$(document).ready(function(){
+			$('#date').html("This page was last modified on: " + document.lastModified);
+		})
+	</script>
+	
 	<!--[if lt IE 9 ]>
 	<script src="http://html5shim.googlecod.com/svn/trunk/html5.js">
 	</script>
@@ -113,6 +122,7 @@
 		Copyright &copy; 2017 MD BioChem
 		<br>
 		<a href="mailto:john@mdbiochem.com">john@mdbiochem.com</a>
+		<div id="date"> </div>
 	</footer>
 </div>
 </body>

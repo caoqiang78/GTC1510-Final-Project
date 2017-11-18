@@ -1,3 +1,5 @@
+
+
 * {
 	box-sizing:border-box;
 	margin:0;
@@ -54,7 +56,7 @@ body {
 
 #three_columns {
 	display:flex;
-	flex-flow:row wrap;
+	flex-flow:row nowrap;
 }
 
 header {
@@ -368,6 +370,59 @@ ul.privacy_policy, ul.sitemap{
 	list-style-type:disc;
 	padding-left:2.5em;
 }
+
+#audio_video_image{
+	display:flex;
+	flex-flow:row wrap;
+	justify-content:center;
+}
+
+#video, #audio{
+	flex:auto;
+	text-align:center;
+}
+
+#slideshow {
+	flex:none;
+	text-align:center;
+}
+
+div.fotorama img{
+	max-width:100%;
+}
+
+#audio_video_image h4 {
+	margin-bottom:0.6em;
+}
+
+iframe{
+	width:370px;
+	height:150px;
+}
+
+#back{
+	background-color:#cccccc;
+	border:2px solid #333333;
+	border-radius:50%;
+	float:right;
+	font-size:1em;
+	font-weight:bold;
+	height:3.2em;
+	text-align:center;
+	transition:all 1s;
+	width:3.2em;
+}
+
+#back:hover{
+	transform:scale(1.5);
+}
+
+#back a{
+	display:block;
+	padding:0.64em 0;
+	text-decoration:none;
+}
+
 
 /* responsive web design */
 

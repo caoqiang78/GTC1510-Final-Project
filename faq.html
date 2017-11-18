@@ -9,6 +9,17 @@
 	<link rel="stylesheet" href="final.css">
 	<link rel="shortcut icon" href="images/favicon.ico" style="image/x-icon">
 	<link rel="icon" href="images/favicon.ico" style="image/x-icon">
+	
+	<script>
+		function go_back(){
+			window.history.go(-1);
+		}
+
+		function trnasform(){
+			
+		}
+	</script>
+	
 	<!--[if lt IE 9 ]>
 	<script src="http://html5shim.googlecod.com/svn/trunk/html5.js">
 	</script>
@@ -46,7 +57,8 @@
 			<li><a href="blog.html">Blog</a></li>
 		</ul>
 	</nav>
-	<main role="main">
+	<main role="main" id="top">
+		<div id="back" onclick="go_back()" onmouseover="transform()"> <a href="#"> Back </a> </div>
 		<dl>
 			<dt> Q: How do I place an order? </dt>
 				<dd>
@@ -99,6 +111,7 @@
 						to submit a request.
 					</dd>
 		</dl>
+		<div id="back"> <a href="#top"> Top </a> </div>
 	</main>
 	
 	<aside role="complementary">
