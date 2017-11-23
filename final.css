@@ -188,6 +188,11 @@ aside {
 	padding-top:1.5em;
 }
 
+#search_box{
+	border:0; 
+	margin:0.6em auto;
+}
+
 footer {
 	background-color:#98baf8;
 	border-top:3px solid #787878;
